@@ -30,7 +30,9 @@ namespace Week5GroupProject
 
         static void Main(string[] args)
         {
-
+            int[] chocArray = new int[] { 3, 2, 3 };
+            Console.WriteLine(CanBuyTwoChocs(chocArray, 6));
+            Console.ReadKey();
         }
 
     }

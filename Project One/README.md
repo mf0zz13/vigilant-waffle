@@ -31,6 +31,7 @@ Explanation: You cannot buy 2 chocolates without going in debt, so we return 3.
 
 # SUDO-CODE
 
+```
 static string CanYouBuyTwoChocolates(int[] array, int money)
 {
   int[] sortedArray = sort array(arry, 0, array length)
@@ -48,5 +49,6 @@ static string CanYouBuyTwoChocolates(int[] array, int money)
         break;
   }
 }
+```
   
   

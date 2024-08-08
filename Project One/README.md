@@ -1,4 +1,4 @@
-#Project One
+# Project One
 Buy 2 chocolates! 
 
  
@@ -29,7 +29,7 @@ Output: 3
 
 Explanation: You cannot buy 2 chocolates without going in debt, so we return 3. 
 
-#SUDO-CODE
+# SUDO-CODE
 
 static string CanYouBuyTwoChocolates(int[] array, int money)
 {

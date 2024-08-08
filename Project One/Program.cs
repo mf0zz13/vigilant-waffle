@@ -13,7 +13,7 @@ namespace Week5GroupProject
             for (int i = 1; i < sortedArray.Length; i++)
             {
                 int priceOfTwo = lowestPrice + sortedArray[i];
-                switch (priceofTwo <= money)
+                switch (priceOfTwo <= money)
                 {
                     case true:
                         return $"You have {money - priceOfTwo:C2} left over ";
@@ -22,37 +22,19 @@ namespace Week5GroupProject
                         return "You cannot afford two chocolates. ";
                         break;
 
+
                 }
-
             }
-
+            return "Calcualtion Failed!";
         }
-
-
 
         static void Main(string[] args)
         {
 
-
-
-
         }
 
-
-
-
-
-
     }
-
-
-
-
-
-
-
-
-
 }
+
 
 

@@ -37,17 +37,14 @@ static string CanYouBuyTwoChocolates(int[] array, int money)
   int[] sortedArray = sort array(arry, 0, array length)
   int lowestPrice = sortedArray[0]
 
-  for(int i = 1; i < sortedArray.Length; i++)
-  {
-    int priceOfTwo = lowestPrice + sortedArray[i]
-    switch (price <= money)
-      case true:
+  int priceOfTwo = lowestPrice + sortedArray[i]
+  switch (price <= money)
+    case true:
         retrun you have {money - price:C2} left over
         break
-      defalut:
+    defalut:
         return you can not afford two chocolats
         break;
-  }
 }
 ```
   

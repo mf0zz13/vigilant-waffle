@@ -7,8 +7,13 @@ namespace Week5GroupProject
     {
         static string CanBuyTwoChocs(int[] sortedArray, int money)
         {
+            // Sorting the array so it is order from least to greatest
             Array.Sort(sortedArray);
+
+            // Finding the lowest price of two chocolates
             int priceOfTwo = sortedArray[0] + sortedArray[1];
+
+            // Returning the money that is left over or that the user can not afford two chocolates.
             switch (priceOfTwo <= money)
             {
                 case true:
@@ -17,10 +22,8 @@ namespace Week5GroupProject
                 default:
                     return "You cannot afford two chocolates. ";
                     break;
-
-
             }
-            return "Calcualtion Failed!";
+            return "Calculation Failed!";
         }
 
         static void Main(string[] args)
@@ -29,7 +32,6 @@ namespace Week5GroupProject
             Console.WriteLine(CanBuyTwoChocs(chocArray, 6));
             Console.ReadKey();
         }
-
     }
 }
 

@@ -34,8 +34,8 @@ int sum = 0
 
 for(i equal to 0 while i less than house length index i)
 {
-	valuesIndex[0].index = i
-	valuesIndex[0].value = houses[i]
+	valuesIndex[i].index = i
+	valuesIndex[i].value = houses[i]
 }
 
 

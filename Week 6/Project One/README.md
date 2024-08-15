@@ -26,5 +26,45 @@ Explanation: Rob house 1 (money = 2), rob house 3 (money = 9) and rob house 5 (m
 Total amount you can rob = 2 + 9 + 1 = 12. 
 # Sudo-Code
 ```
-// FIXME: Add sudo code here
+public static int RobAHouse(int[] house)
+{
+(int index, int value)[] valuesIndex = new (int index, int value)[house length]
+int[] indexUsed = new int[house length]
+int sum = 0
+
+for(i equal to 0 while i less than house length index i)
+{
+	valuesIndex[0].index = i
+	valuesIndex[0].value = houses[i]
+}
+
+
+
+for(int i equals 0 while i less than house length - 1 increment i)
+{
+	int minValPlace = i
+	for(int j = i+1 while j less than house length increment j)
+	{
+	if valuesIndex[minValPlace].value < valuesIndex[j].value
+		minValPlace = j
+	}	
+
+	if valuesIndex[minValPlace] != valuesIndex[i]
+		(int index, int value) tempItem = valuesIndex[i]
+		valuesIndex[i] = valuesIndex[minValPalce]
+		vauesIndex[minValPlace] = tempItem
+}
+
+sum += valuesIndex[0].value
+indexUsed[0] = valuesIndex.index
+
+for(int i equals 1 while i less than house length increment i)
+	
+	int lessThan = valuesIndex[i].index - 1
+	int moreThan = valuesIndex[i].index + 1
+	
+	if indexUsed contains lessThan or More than, continue
+	else
+		sum += valuesIndex[i].value
+}
 ```

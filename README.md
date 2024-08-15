@@ -1,2 +1,2 @@
 # vigilant-waffle
-MSSA Assignments
+MSSA Group Projects
